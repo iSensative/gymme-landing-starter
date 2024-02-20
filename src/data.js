@@ -19,6 +19,10 @@ import PriceIcn from '../src/assets/img/pricing/icons/price.svg';
 import CommunityIcn from '../src/assets/img/community/icons/community-icn.svg';
 import QuestionMarkIcn from '../src/assets/img/faq/icons/question-mark.svg';
 
+  // Import Icons EMILIANO
+  
+  import nievalogo from './assets/emiassets/logonieva.png'
+
 export const header = {
   logo: Logo,
   btnLoginText: 'Log in',
@@ -35,8 +39,8 @@ export const nav = [
 ];
 
 export const banner = {
-  titlePart1: 'Get the best part of your day',
-  titlePart2: '– you fit here.',
+  titlePart1: 'Club Atletico',
+  titlePart2: '–Ciudad de Nieva.',
   subtitle:
     'We provide serious fitness but within a fun and friendly, safe space.',
   textBtn: 'Join Now',
@@ -44,12 +48,12 @@ export const banner = {
 };
 
 export const about = {
-  icon: UsersIcn,
-  title: 'Our misson',
+  icon: nievalogo,
+  title: 'Nuestro Objetivo',
   subtitle1:
-    'We are distinguished by our unsurpassed motivating atmosphere, knowledgeable staff, and premier exercise equipment, which supports our members in meeting their individual fitness goals.',
+    'Cada entrenamiento es una oportunidad para mejorar, para crecer, para convertirte en la mejor versión de ti mismo. ¡No la desperdicies, haz que cuente!',
   subtitle2:
-    'The strength of our heart-felt identity is utilized to inspire every person that steps foot into our gyms to better themselves.',
+    'La fuerza de nuestra identidad sincera se refleja en el ambiente de nuestra institucion, motivando a cada alumno a esforzarse por ser la mejor versión de sí mismos.',
   link: 'Join Now',
 };
 
@@ -90,43 +94,20 @@ export const workouts = {
 
 export const pricing = {
   icon: PriceIcn,
-  title: 'Pricing plan',
+  title: 'Cuota Mensual.',
   plans: [
     {
-      name: 'Basic',
-      price: '20',
+      name: 'Voley',
+      price: '9000',
       list: [
         { name: 'unlimited gym access' },
         { name: '1 training programs' },
         { name: 'free fitness consultation' },
       ],
       delay: 600,
+      img:'https://images.pexels.com/photos/6203647/pexels-photo-6203647.jpeg'
     },
-    {
-      name: 'Premium',
-      price: '35',
-      list: [
-        { name: 'unlimited gym access' },
-        { name: '5 training programs' },
-        { name: 'free fitness consultation' },
-        { name: 'personal trainer' },
-      ],
-      delay: 800,
-    },
-    {
-      name: 'Elite',
-      price: '49',
-      list: [
-        { name: 'unlimited gym access' },
-        { name: 'all training programs' },
-        { name: 'free fitness consultation' },
-        { name: 'personal trainer' },
-        { name: '50% off drinks' },
-      ],
-      delay: 1000,
-    },
-  ],
-};
+]}
 
 export const community = {
   icon: CommunityIcn,

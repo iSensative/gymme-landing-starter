@@ -68,4 +68,9 @@
   .section-title {
     @apply flex -space-x-4;
   }
+
+  .path{
+   clip-path: polygon(100% 0, 100% 80%, 49% 100%, 0 80%, 0 0);
+
+  }
 }
