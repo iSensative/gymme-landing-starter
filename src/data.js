@@ -1,10 +1,5 @@
 // images
 import Logo from '../src/assets/img/header/logo.svg';
-import ResistanceImg from '../src/assets/img/workouts/resistance.png';
-import BoxingImg from '../src/assets/img/workouts/boxing.png';
-import BodyPumpImg from '../src/assets/img/workouts/body-pump.png';
-import YogaImg from '../src/assets/img/workouts/yoga.png';
-import FullBodyImg from '../src/assets/img/workouts/full-body.png';
 import FitnessImg from '../src/assets/img/workouts/fitness.png';
 import BattleRopeImg from '../src/assets/img/workouts/battle-rope.png';
 import CommunityImg1 from '../src/assets/img/community/img1.png';
@@ -22,6 +17,15 @@ import QuestionMarkIcn from '../src/assets/img/faq/icons/question-mark.svg';
   // Import Icons EMILIANO
   
   import nievalogo from './assets/emiassets/logonieva.png'
+  import futbol from './assets/emiassets/futbol.jpeg'
+  import voley from './assets/emiassets/voley.jpeg'
+  import basquet from './assets/emiassets/basquet.jpeg'
+  import gym from './assets/emiassets/gym.jpeg'
+  import pilates from './assets/emiassets/pilates.jpeg'
+  import hockey from './assets/emiassets/hockey.jpeg'
+  import padel from './assets/emiassets/padel.jpeg'
+  import hockey2 from './assets/emiassets/hockey2.jpg'
+  import nievanew from './assets/emiassets/nievaNew.jpg'
 
 export const header = {
   logo: Logo,
@@ -53,41 +57,41 @@ export const about = {
   subtitle1:
     'Cada entrenamiento es una oportunidad para mejorar, para crecer, para convertirte en la mejor versión de ti mismo. ¡No la desperdicies, haz que cuente!',
   subtitle2:
-    'La fuerza de nuestra identidad sincera se refleja en el ambiente de nuestra institucion, motivando a cada alumno a esforzarse por ser la mejor versión de sí mismos.',
+    'La fuerza de nuestra identidad sincera se refleja en el ambiente de nuestra institucion, motivando a cada alumno a esforzarse a lograr sus objetivos.',
   link: 'Join Now',
 };
 
 export const workouts = {
   icon: CalendarIcn,
-  title: 'Training programs',
+  title: 'Deportes',
   programs: [
     {
-      image: ResistanceImg,
-      name: 'Resistance',
+      image: futbol,
+      name: 'Futbol',
     },
     {
-      image: BoxingImg,
-      name: 'Boxing',
+      image: voley,
+      name: 'Voley',
     },
     {
-      image: BodyPumpImg,
-      name: 'Body Pump',
+      image: basquet,
+      name: 'Basquet',
     },
     {
-      image: YogaImg,
-      name: 'Yoga',
+      image: gym,
+      name: 'Gym',
     },
     {
-      image: FullBodyImg,
-      name: 'Full Body',
+      image: pilates,
+      name: 'Pilates',
     },
     {
-      image: FitnessImg,
-      name: 'Fitness',
+      image: hockey,
+      name: 'Hockey',
     },
     {
-      image: BattleRopeImg,
-      name: 'Battle Rope',
+      image: padel,
+      name: 'Padel',
     },
   ],
 };
@@ -100,77 +104,46 @@ export const pricing = {
       name: 'Voley',
       price: '9000',
       list: [
-        { name: 'unlimited gym access' },
-        { name: '1 training programs' },
-        { name: 'free fitness consultation' },
+        { name: 'Beneficios' },
+        { name: 'Beneficios' },
+        { name: 'Beneficios' },
       ],
       delay: 600,
-      img:'https://images.pexels.com/photos/6203647/pexels-photo-6203647.jpeg'
     },
 ]}
 
-export const community = {
-  icon: CommunityIcn,
-  title: 'Community',
-  testimonials: [
-    {
-      image: CommunityImg1,
-      name: 'Mark A.',
-      message:
-        '“Great location, great price and great, helpful people. What to want more?”',
-    },
-    {
-      image: CommunityImg2,
-      name: 'Lauren K.',
-      message:
-        '“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”',
-    },
-    {
-      image: CommunityImg3,
-      name: 'Jhon D.',
-      message:
-        '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
-    },
-    {
-      image: CommunityImg4,
-      name: 'Anne R.',
-      message:
-        '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
-    },
-  ],
-};
 
 export const faq = {
   icon: QuestionMarkIcn,
-  title: 'FAQ',
+  title: 'Preguntas Frecuentes',
   accordions: [
     {
-      question: 'How can I book a workout class?',
+      question: 'Pregunta',
       answer:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
     },
     {
-      question: 'Can I pay by cash for my membership?',
+      question: 'Pregunta',
       answer:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
     },
     {
-      question: 'What age do I need to be to join?',
+      question: 'Pregunta',
       answer:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
     },
     {
-      question: 'Are there any lockers?',
+      question: 'Pregunta',
       answer:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
     },
     {
-      question: 'How do I cancel my membership?',
+      question: 'Pregunta',
       answer:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
     },
     {
-      question: 'Is there water available at the gym?',
+      question: 'Pregunta',
       answer:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
     },
@@ -178,11 +151,11 @@ export const faq = {
 };
 
 export const join = {
-  image: JoinImg,
-  title: 'Wanna join & have fun?',
+  image: nievanew,
+  title: 'Unete a Nuestro Club',
   subtitle:
-    'We’ll keep you updated on the things you need to know about Gymme. Nothing more, nothing less.',
-  btnText: 'Join now',
+    'Cada gota de sudor es un paso más hacia el éxito. ¡Sigue trabajando duro y nunca pierdas de vista tus sueños!',
+  btnText: 'Unete',
 };
 
 export const footer = {
