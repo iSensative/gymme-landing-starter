@@ -29,8 +29,8 @@ import QuestionMarkIcn from '../src/assets/img/faq/icons/question-mark.svg';
 
 export const header = {
   logo: Logo,
-  btnLoginText: 'Log in',
-  btnSignupText: 'Sign Up',
+  btnLoginText: 'Registrate',
+  btnSignupText: 'Ingresa',
 };
 
 export const nav = [
@@ -46,8 +46,8 @@ export const banner = {
   titlePart1: 'Club Atletico',
   titlePart2: '–Ciudad de Nieva.',
   subtitle:
-    'We provide serious fitness but within a fun and friendly, safe space.',
-  textBtn: 'Join Now',
+    '',
+  textBtn: 'Unete Ahora',
   img: '',
 };
 
@@ -101,7 +101,7 @@ export const pricing = {
   title: 'Cuota Mensual.',
   plans: [
     {
-      name: 'Voley',
+      name: 'Cuota Mensual',
       price: '9000',
       list: [
         { name: 'Beneficios' },
