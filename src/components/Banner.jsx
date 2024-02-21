@@ -37,7 +37,7 @@ const Banner = () => {
           </div>
           {/* image */}
           <div
-            className=' w-full h-full bg-[url("https://scontent.fjuj3-1.fna.fbcdn.net/v/t39.30808-6/418513966_18252630313214872_1321168369590371456_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeFvdZw2YnkHxExDskars3Q6-evNfYSQLsL56819hJAuwshX4wOlC4rFlaw6w96Tn5Irj8MYuy_P8DYCqZZ-GS-N&_nc_ohc=MGWcl2Rua0YAX8vDDvP&_nc_ht=scontent.fjuj3-1.fna&oh=00_AfD9ZgcrNp2at8Xy2YtP1A6YdCe8MAETdQQf2l1AlBf7MQ&oe=65D57E7C")] bg-cover bg-right lg:bg-center bg-no-repeat flex-1'
+            className=' h-full bg-[url("https://images.pexels.com/photos/6497254/pexels-photo-6497254.jpeg")] bg-center bg-cover  flex-1'
             data-aos="fade-right"
             data-aos-delay="900"
           ></div>

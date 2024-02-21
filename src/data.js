@@ -14,7 +14,7 @@ import PriceIcn from '../src/assets/img/pricing/icons/price.svg';
 import CommunityIcn from '../src/assets/img/community/icons/community-icn.svg';
 import QuestionMarkIcn from '../src/assets/img/faq/icons/question-mark.svg';
 
-  // Import Icons EMILIANO
+  // Import Images EMILIANO
   
   import nievalogo from './assets/emiassets/logonieva.png'
   import futbol from './assets/emiassets/futbol.jpeg'
@@ -58,7 +58,7 @@ export const about = {
     'Cada entrenamiento es una oportunidad para mejorar, para crecer, para convertirte en la mejor versión de ti mismo. ¡No la desperdicies, haz que cuente!',
   subtitle2:
     'La fuerza de nuestra identidad sincera se refleja en el ambiente de nuestra institucion, motivando a cada alumno a esforzarse a lograr sus objetivos.',
-  link: 'Join Now',
+  link: 'Unete',
 };
 
 export const workouts = {
