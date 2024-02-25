@@ -1,5 +1,7 @@
 import React from 'react';
 import { nav } from '../data';
+import { Link } from 'react-router-dom';
+
 
 
 const NavMobile = ({navMobile}) => {
@@ -18,8 +20,8 @@ const NavMobile = ({navMobile}) => {
       </ul>
       {/* Buttosn */}
       <div className='-mt-44 flex justify-center gap-x-8'>
-        <button className='btn btn-lg text-white'>Log In</button>
-        <button className='btn btn-lg btn-primary'>Sign Up</button>
+      <button className='btn btn-lg text-white'>Log In</button>
+      <button className='btn btn-lg btn-primary'>Sign Up</button>
       </div>
     </nav>
   )
