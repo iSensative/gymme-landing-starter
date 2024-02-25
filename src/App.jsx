@@ -16,6 +16,8 @@ import Faq from "../src/components/Faq";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { VoleyPage } from "./pages/VoleyPage";
+import { RegisterPage } from "./pages/RegisterPage";
+import { LoginPage } from "./pages/LoginPage";
 
 const App = () => {
   // aos initialization
@@ -30,8 +32,12 @@ const App = () => {
       element: <Home />,
     },
     {
-      path:'/voley',
-      element:<VoleyPage/>
+      path:'/register',
+      element:<RegisterPage/>
+    },
+    {
+      path:'/login',
+      element:<LoginPage/>
     },
   ]);
 

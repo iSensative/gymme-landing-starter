@@ -29,7 +29,7 @@ const Header = () => {
       fixed max-w-[1440px] z-30 left-0 right-0 flex items-center justify-between mx-auto px-[20px] lg:px-[80px] transition-all duration-300`}
       >
       {/* Logo */}
-      <a href="">
+      <a href="/">
         <img src={logonieva} alt="" className="h-[50px] w-[50px]" />
       </a>
       {/* NAV INITIALLY HIDDEN ON DESKTOP */}
