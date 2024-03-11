@@ -12,7 +12,6 @@ export const Home = () => {
         <Banner/>
         <About/>
         <Workouts/>
-        <Pricing/>
         <Faq/>
         <Join/>
     </>
