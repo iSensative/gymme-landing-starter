@@ -4,6 +4,7 @@ import Nav from "../components/Nav";
 import NavMobile from "../components/NavMobile";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 import logonieva from '../assets/emiassets/logonieva.png'
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { logo, btnLoginText, btnSignupText } = header;
@@ -28,6 +29,8 @@ const Header = () => {
       ? 'bg-neutral-500 py-[30px]': 'bg-transparent py-[20px]'}
       fixed max-w-[1440px] z-30 left-0 right-0 flex items-center justify-between mx-auto px-[20px] lg:px-[80px] transition-all duration-300`}
       >
+
+        
       {/* Logo */}
       <a href="/">
         <img src={logonieva} alt="" className="h-[50px] w-[50px]" />
@@ -36,8 +39,8 @@ const Header = () => {
       <Nav />
       {/* Btns - initially hidden show on desktop */}
       <div className="hidden lg:flex space-x-4">
-        <button className="btn btn-sm text-white hover:text-primary-200 transition">{btnLoginText}</button>
-        <button className="btn btn-sm btn-primary">{btnSignupText}</button>
+        <Link to='/register'><button className="btn btn-sm text-white hover:text-primary-200 transition">{btnLoginText}</button></Link>
+        <Link to='/login'><button className="btn btn-sm btn-primary">{btnSignupText}</button></Link>
       </div>
       {/* Nav menu btn - hidden on desktop */}
       <div className="lg:hidden absolute right-4" onClick={()=>setNavMobile(!navMobile)}>

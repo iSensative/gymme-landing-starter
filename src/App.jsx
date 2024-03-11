@@ -15,9 +15,9 @@ import Footer from "./components/Footer";
 import Faq from "../src/components/Faq";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { VoleyPage } from "./pages/VoleyPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { LoginPage } from "./pages/LoginPage";
+import { AdminPage} from "./AdminPages/AdminPage";
 
 const App = () => {
   // aos initialization
@@ -29,23 +29,45 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element:(
+        <>
+        <Header/>
+        <Home />
+      </>
+      )
     },
     {
       path:'/register',
-      element:<RegisterPage/>
+      element:(
+        <>
+        <Header />
+        <RegisterPage />
+        </>
+      )
     },
     {
       path:'/login',
-      element:<LoginPage/>
+      element:(
+        <>
+        <Header/>
+        <LoginPage />
+      </>
+      )
+    },
+    {
+      path:'/admin',
+      element:(
+        <>
+        <Header/>
+        <AdminPage/>
+        </>
+      )
     },
   ]);
 
   return (
-    <div className="max-w-[1440px] mx-auto bg-page overflow-hidden">
-      <Header />
+    <div className="max-w-[1440px] mx-auto bg-[#f4f4f4] overflow-hidden">
       <RouterProvider router={router} />
-      {/* <Footer /> */}
     </div>
   );
 };
