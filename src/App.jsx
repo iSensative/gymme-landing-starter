@@ -33,6 +33,7 @@ const App = () => {
         <>
         <Header/>
         <Home />
+        <Footer/>
       </>
       )
     },
@@ -42,6 +43,7 @@ const App = () => {
         <>
         <Header />
         <RegisterPage />
+        <Footer/>
         </>
       )
     },
@@ -51,6 +53,7 @@ const App = () => {
         <>
         <Header/>
         <LoginPage />
+        <Footer/>
       </>
       )
     },
@@ -60,6 +63,7 @@ const App = () => {
         <>
         <Header/>
         <AdminPage/>
+        <Footer/>
         </>
       )
     },
