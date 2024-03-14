@@ -14,15 +14,15 @@ const Footer = () => {
   return (
     <section className='overflow-hidden h-[470px] w-full bg-black/90'>
       {/* Parte Superior */}
-      <div className=' flex items-center justify-between w-full h-[150px] px-32'>
+      <div className=' flex items-center  justify-center lg:justify-between w-full h-[150px]  gap-x-6 lg:px-32'>
         {/* Logo */}
-        <div className='overflow-hidden'>
-          <img src={logonieva} alt="" className='w-[70px] h-[70px] ' />
+        <div className=' hidden lg:overflow-hidden'>
+          <img src={logonieva} alt="" className=' h-[50px] w-[70px] lg:h-[70px] ' />
         </div>
         {/* Social Media */}
         <div className='text-black'>
-          <nav className='ml-40'>
-            <ul className='flex gap-x-12 ml-20'>
+          <nav className='lg:ml-40 '>
+            <ul className='flex gap-x-4 lg:gap-x-12  ml-6 lg:ml-20'>
               <li><FaFacebookSquare className='w-[40px] h-[40px] cursor-pointer text-white' /></li>
               <li><GrInstagram className='w-[40px] h-[40px] cursor-pointer text-white' /></li>
               <li><FaTwitterSquare className='w-[40px] h-[40px] cursor-pointer text-white' /></li>
@@ -32,7 +32,7 @@ const Footer = () => {
         {/* NavFooter*/}
         <div>
           <nav>
-            <ul className='flex text-lg font-bold gap-x-3'>
+            <ul className=' hidden lg:flex lg:text-lg lg:font-bold lg:gap-x-3'>
               <li className='font-primary text-white'>About</li>
               <li className='font-primary text-white'>Nosotros</li>
               <li className='font-primary text-white'>Tienda</li>

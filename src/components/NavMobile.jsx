@@ -1,12 +1,19 @@
 import React from 'react';
 import { nav } from '../data';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 
-const NavMobile = ({navMobile}) => {
+const NavMobile = () => {
+
+
+  const navMobile = useSelector(state=>state.navMobile)
+  const dispatch =useDispatch()
+  console.log(navMobile)
+
   return(
-    <nav className={`${navMobile
+    <nav className={`${ navMobile ==='false'
     ?'min-h-screen'
     :' hidden'}
     lg:hidden w-full bg-neutral-500  fixed top-0 left-0  right-0 -bottom-18 -z-10 overflow-hidden transition-all h-10 `}>
@@ -20,8 +27,8 @@ const NavMobile = ({navMobile}) => {
       </ul>
       {/* Buttosn */}
       <div className='-mt-44 flex justify-center gap-x-8'>
-      <Link to='/login'><button className='btn btn-lg text-white'>Log In</button></Link>
-      <Link to='/register'><button className='btn btn-lg btn-primary'>Sign Up</button></Link>
+      <Link to='/login'><button     className='btn btn-lg text-white'>Log In</button></Link>
+      <Link to='/register'><button  className='btn btn-lg btn-primary'>Sign Up</button></Link>
       </div>
     </nav>
   )

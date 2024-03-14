@@ -8,7 +8,7 @@ export const LoginPage = () => {
             <div className=" h-full w-full">
                 <div className='flex w-full h-full'>
                     {/* Image */}
-                    <div className=' hidden lg:block lg:bg-[url("https://images.pexels.com/photos/15129800/pexels-photo-15129800/free-photo-of-deporte-otono-caer-actividad.jpeg")]  w-4/6 h-full bg-center bg-cover  '>
+                    <div className=' hidden lg:block lg:bg-hockey  w-4/6 h-full bg-center bg-cover  '>
 
                     </div>
                     {/* Login */}
