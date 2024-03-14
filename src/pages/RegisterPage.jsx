@@ -8,7 +8,7 @@ export const RegisterPage = () => {
       <div className=" h-full w-full">
         <div className='flex w-full h-full'>
           {/* Image */}
-          <div className=' hidden lg:block lg:bg-[url("https://scontent.fjuj3-1.fna.fbcdn.net/v/t39.30808-6/251525972_2136025259887944_6062043460392916213_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=74yPtJc0MYEAX8jXD1W&_nc_ht=scontent.fjuj3-1.fna&oh=00_AfCPvszrYg36taEBw_We2I3DSTPYGlHrSpJsti157FtKeQ&oe=65E48891")]  w-4/6 h-full bg-center bg-cover  '>
+          <div className=' hidden lg:block lg:bg-hockey  w-4/6 h-full bg-center bg-cover  '>
 
           </div>
           {/* Login */}

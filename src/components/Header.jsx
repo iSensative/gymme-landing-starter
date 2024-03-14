@@ -5,14 +5,15 @@ import NavMobile from "../components/NavMobile";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 import logonieva from '../assets/emiassets/logonieva.png'
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { changeNavMobileTrue } from "../redux/slice";
+
 
 const Header = () => {
   const { logo, btnLoginText, btnSignupText } = header;
 
   const [isActive, setIsActive] = useState(false);
 
-    // Nav mobile state
-    const [navMobile, setNavMobile] = useState(false)
 
     // Scroll event
 
@@ -22,6 +23,10 @@ const Header = () => {
       })
     })
 
+
+      const navMobile = useSelector(state=>state.navMobile)
+      const dispatch =useDispatch()
+      console.log(navMobile)
 
   return (
     <header
@@ -43,9 +48,9 @@ const Header = () => {
         <Link to='/login'><button className="btn btn-sm btn-primary">{btnSignupText}</button></Link>
       </div>
       {/* Nav menu btn - hidden on desktop */}
-      <div className="lg:hidden absolute right-4" onClick={()=>setNavMobile(!navMobile)}>
+      <div className="lg:hidden absolute right-4" onClick={()=>dispatch(changeNavMobileTrue())}>
         {
-          navMobile
+          navMobile === 'false'
           ? <RiCloseFill className="text-primary-200 text-3xl cursor-pointer" />
           : <RiMenu4Fill className="text-primary-200 text-3xl cursor-pointer" />
         }

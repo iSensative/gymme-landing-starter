@@ -1,31 +1,23 @@
 // images
 import Logo from '../src/assets/img/header/logo.svg';
-import FitnessImg from '../src/assets/img/workouts/fitness.png';
-import BattleRopeImg from '../src/assets/img/workouts/battle-rope.png';
-import CommunityImg1 from '../src/assets/img/community/img1.png';
-import CommunityImg2 from '../src/assets/img/community/img2.png';
-import CommunityImg3 from '../src/assets/img/community/img3.png';
-import CommunityImg4 from '../src/assets/img/community/img4.png';
-import JoinImg from '../src/assets/img/join/woman.png';
+
 // icons
-import UsersIcn from '../src/assets/img/about/icons/users-icn.svg';
 import CalendarIcn from '../src/assets/img/workouts/icons/calendar.svg';
 import PriceIcn from '../src/assets/img/pricing/icons/price.svg';
-import CommunityIcn from '../src/assets/img/community/icons/community-icn.svg';
 import QuestionMarkIcn from '../src/assets/img/faq/icons/question-mark.svg';
 
   // Import Images EMILIANO
   
   import nievalogo from './assets/emiassets/logonieva.png'
-  import futbol from './assets/emiassets/futbol.jpeg'
-  import voley from './assets/emiassets/voley.jpeg'
-  import basquet from './assets/emiassets/basquet.jpeg'
-  import gym from './assets/emiassets/gym.jpeg'
-  import pilates from './assets/emiassets/pilates.jpeg'
-  import hockey from './assets/emiassets/hockey.jpeg'
-  import padel from './assets/emiassets/padel.jpeg'
-  import hockey2 from './assets/emiassets/hockey2.jpg'
-  import nievanew from './assets/emiassets/nievaNew.jpg'
+  import futbol from './assets/emiassets/futbol.webp'
+  import voley from './assets/emiassets/voley.webp'
+  import basquet from './assets/emiassets/basquet.webp'
+  import gym from './assets/emiassets/gym.webp'
+  import pilates from './assets/emiassets/pilates.webp'
+  import hockey from './assets/emiassets/hockey.webp'
+  import padel from './assets/emiassets/padel.webp'
+  import hockey2 from './assets/emiassets/hockey2.webp'
+  import nievanew from './assets/emiassets/nievaNew.webp'
 
 export const header = {
   logo: Logo,

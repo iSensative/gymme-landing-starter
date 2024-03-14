@@ -35,6 +35,7 @@ module.exports = {
       backgroundImage: {
         banner: "url('/src/assets/img/banner/bg.png')",
         faq: "url('/src/assets/img/faq/bg.svg')",
+        hockey:"url('/src/assets/emiassets/hockey2.webp')"
       },
       backgroundSize: {
         auto: 'auto',
