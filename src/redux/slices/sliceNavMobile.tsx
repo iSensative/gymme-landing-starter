@@ -1,16 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  navMobile: false,
-};
+export interface navMobileState {
+  navMobile: boolean;
+}
+
+const initialState: navMobileState = { navMobile: false };
 
 export const sliceNavMobile = createSlice({
   name: "sliceNavMobile",
   initialState,
 
   reducers: {
-    changeNavMobileTrue: (state) => {
-      state.navMobile = true;
+    activeNavMobile: (state) => {
+      state.navMobile = !state.navMobile;
     },
 
     changeNavMobileFalse: (state) => {
@@ -19,6 +21,5 @@ export const sliceNavMobile = createSlice({
   },
 });
 
-export const { changeNavMobileTrue, changeNavMobileFalse } =
-  sliceNavMobile.actions;
+export const { activeNavMobile, changeNavMobileFalse } = sliceNavMobile.actions;
 export default sliceNavMobile.reducer;

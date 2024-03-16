@@ -7,7 +7,11 @@ import NavMobile from "../Header/NavMobile";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 import logonieva from "../../app/assets/img/logonieva.png";
 import { useDispatch, useSelector } from "react-redux";
-import { changeNavMobileTrue } from "../../redux/slices/sliceNavMobile";
+import {
+  changeNavMobileFalse,
+  activeNavMobile,
+  navMobileState,
+} from "../../redux/slices/sliceNavMobile";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,7 +28,9 @@ const Header = () => {
     });
   });
 
-  const navMobile = useSelector((state: { navMobile: boolean }) => state.navMobile);
+  const navMobile = useSelector(
+    (state: { navMobile: navMobileState }) => state.navMobile,
+  );
   const dispatch = useDispatch();
 
   return (
@@ -32,7 +38,7 @@ const Header = () => {
       className={`${
         isActive ? "bg-neutral-500 py-[30px]" : "bg-transparent py-[20px]"
       }
-      fixed max-w-[1440px] z-30 left-0 right-0 flex items-center justify-between mx-auto px-[20px] lg:px-[80px] transition-all duration-300`}
+      fixed left-0 right-0 z-30 mx-auto flex max-w-[1440px] items-center justify-between px-[20px] transition-all duration-300 lg:px-[80px]`}
     >
       {/* Logo */}
       <a href="/">
@@ -41,9 +47,10 @@ const Header = () => {
       {/* NAV INITIALLY HIDDEN ON DESKTOP */}
       <Nav />
       {/* Btns - initially hidden show on desktop */}
-      <div className="hidden lg:flex space-x-4">
+
+      <div className="hidden space-x-4 lg:flex">
         <Link href="/register">
-          <button className="btn btn-sm text-white hover:text-primary-200 transition">
+          <button className="btn btn-sm text-white transition hover:text-primary-200">
             {btnLoginText}
           </button>
         </Link>
@@ -51,14 +58,17 @@ const Header = () => {
           <button className="btn btn-sm btn-primary">{btnSignupText}</button>
         </Link>
       </div>
+      
       {/* Nav menu btn - hidden on desktop */}
       <div
-        className="lg:hidden absolute right-4"
-        onClick={() => dispatch(changeNavMobileTrue())}
+        className="absolute right-4 p-10 lg:hidden"
+        onClick={() => dispatch(activeNavMobile())}
       >
-        {navMobile === false 
-        ? (<RiCloseFill className="text-primary-200 text-3xl cursor-pointer" />) 
-        : (<RiMenu4Fill className="text-primary-200 text-3xl cursor-pointer" />)}
+        {navMobile.navMobile === true ? (
+          <RiCloseFill className="cursor-pointer  text-3xl text-primary-200" />
+        ) : (
+          <RiMenu4Fill className="cursor-pointer text-3xl text-primary-200" />
+        )}
       </div>
       {/* Nav mobile hide on desktop */}
       <NavMobile />

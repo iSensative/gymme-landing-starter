@@ -4,21 +4,22 @@ import React from "react";
 import { nav } from "../../../data";
 import { useDispatch, useSelector } from "react-redux";
 import Link from "next/link";
+import { changeNavMobileFalse } from "@/redux/slices/sliceNavMobile";
 
 const NavMobile = () => {
-  const navMobile = useSelector((state: { navMobile: boolean }) => state.navMobile);
-  const dispatch = useDispatch();
+  const navMobile = useSelector((state: any) => state.navMobile);
 
+  const dispatch = useDispatch();
   return (
     <nav
-      className={`${navMobile === false ? "min-h-screen" : " hidden"}
-    lg:hidden w-full bg-neutral-500  fixed top-0 left-0  right-0 -bottom-18 -z-10 overflow-hidden transition-all h-10 `}
+      className={`${navMobile.navMobile === true ? "min-h-screen" : " hidden"}
+       -bottom-18 fixed left-0  right-0 top-0 -z-10  h-10 w-full overflow-hidden bg-neutral-500 transition-all lg:hidden `}
     >
-      <ul className="w-full h-full flex flex-col justify-center items-center gap-y-8">
+      <ul className=" flex h-full w-full flex-col items-center justify-center gap-y-8">
         {nav.map((item, index) => {
           return (
             <li key={index}>
-              <a className="text-white text-body" href={item.href}>
+              <a className="text-body text-white" href={item.href}>
                 {item.name}
               </a>
             </li>
@@ -27,10 +28,10 @@ const NavMobile = () => {
       </ul>
       {/* Buttosn */}
       <div className="-mt-44 flex justify-center gap-x-8">
-        <Link href="/login">
+        <Link href="/login" onClick={() => dispatch(changeNavMobileFalse())}>
           <button className="btn btn-lg text-white">Log In</button>
         </Link>
-        <Link href="/register">
+        <Link href="/register" onClick={() => dispatch(changeNavMobileFalse())}>
           <button className="btn btn-lg btn-primary">Sign Up</button>
         </Link>
       </div>

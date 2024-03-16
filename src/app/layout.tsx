@@ -18,10 +18,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <div className="max-w-[1440px] mx-auto bg-page overflow-hidden">
-          <Providers>
-            {children}
-          </Providers>
+        <div className="mx-auto max-w-[1440px] overflow-hidden bg-page">
+          <Providers>{children}</Providers>
         </div>
       </body>
     </html>
